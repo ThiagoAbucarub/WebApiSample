@@ -1,0 +1,6 @@
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\bin\Debug\WebApiSample.Infra.dll
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\bin\Debug\WebApiSample.Infra.pdb
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.csprojResolveAssemblyReference.cache
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.csproj.CoreCompileInputs.cache
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.dll
+C:\Users\abucarub\Documents\Visual Studio 2017\Projects\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.pdb
