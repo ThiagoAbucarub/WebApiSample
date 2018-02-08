@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebApiSample.Domain;
 
 namespace WebApiSample.WebApi.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     [RoutePrefix("WebApiSample")]
     public class PersonController : ApiController
     {

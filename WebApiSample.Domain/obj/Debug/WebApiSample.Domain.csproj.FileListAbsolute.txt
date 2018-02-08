@@ -14,3 +14,11 @@ C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\D
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.dll
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.pdb
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\bin\Debug\WebApiSample.Domain.dll
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\bin\Debug\WebApiSample.Domain.pdb
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\bin\Debug\WebApiSample.Infra.dll
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\bin\Debug\WebApiSample.Infra.pdb
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.csprojResolveAssemblyReference.cache
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.csproj.CoreCompileInputs.cache
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.dll
+C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.Domain\obj\Debug\WebApiSample.Domain.pdb
