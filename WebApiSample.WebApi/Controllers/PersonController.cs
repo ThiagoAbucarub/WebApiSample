@@ -31,6 +31,22 @@ namespace WebApiSample.WebApi.Controllers
             return person;
         }
 
+        // GET: WebApiSample/Person/Post
+        [AcceptVerbs("Post")]
+        [Route("Person/Post")]
+        public Person Post(string Name, string Phone, string Email, string BornDate, string Gender)
+        {
+            person.Name = Name;
+            person.Phone = Phone;
+            person.Email = Email;
+            person.BornDate = BornDate;
+            person.Gender = Gender;
+            person.Post();
+
+            return person;
+            
+        }
+
         // POST: api/Person
         public void Post([FromBody]string value)
         {
