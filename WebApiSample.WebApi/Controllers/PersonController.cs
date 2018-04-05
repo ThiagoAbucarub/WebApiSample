@@ -1,0 +1,47 @@
+﻿using System.Collections.Generic;
+using System.Web.Http;
+using WebApiSample.Domain;
+
+namespace WebApiSample.WebApi.Controllers
+{
+    [RoutePrefix("WebApiSample")]
+    public class PersonController : ApiController
+    {
+        Person person = new Person();
+        List<Person> listPerson = new List<Person>();
+
+        // GET: WebApiSample/Person/GetAll
+        [AcceptVerbs("GET")]
+        [Route("Person/GetAll")]
+        public List<Person> GetAll()
+        {
+            listPerson = person.GetAll();
+            return listPerson;
+        }
+
+        // GET: WebApiSample/Person/GetById/5
+        [AcceptVerbs("GET")]
+        [Route("Person/GetById/{PersonId}")]
+        public Person GetById (int PersonId)
+        {
+            person.PersonId = PersonId;
+            person.GetById();
+            return person;
+        }
+
+        // POST: api/Person
+        public void Post([FromBody]string value)
+        {
+        }
+
+        // PUT: api/Person/5
+        public void Put(int id, [FromBody]string value)
+        {
+        }
+
+        // DELETE: api/Person/5
+        public void Delete(int id)
+        {
+        }
+    }
+}

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace MySQL_Windows.Infra
+namespace WebApiSample.Infra
 {
     public class SQLConnection
     {
