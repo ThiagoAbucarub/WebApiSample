@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApiSample.Infra\WebApiSample.Infra.csproj">
+    <ProjectReference Include="..\WebApiSample.Infra\MySQL_WindowsInfra.csproj">
       <Project>{EBF699DA-BF7F-4583-99E1-5C37118FA962}</Project>
-      <Name>WebApiSample.Infra</Name>
+      <Name>MySQL_WindowsInfra</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

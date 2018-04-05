@@ -9,3 +9,4 @@ C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Infra\bin\De
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.csproj.CoreCompileInputs.cache
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.dll
 C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.pdb
+C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.Infra\obj\Debug\WebApiSample.Infra.csprojResolveAssemblyReference.cache

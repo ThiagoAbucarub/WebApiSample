@@ -154,3 +154,6 @@ C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\obj\Debug\We
 C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Cors.dll
 C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Http.Cors.dll
 C:\Users\abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Http.Cors.xml
+C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Cors.dll
+C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\Thiago Abucarub\Documents\GitHub\WebApiSample\WebApiSample.WebApi\bin\System.Web.Http.Cors.xml
