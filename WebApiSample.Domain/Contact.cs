@@ -6,10 +6,10 @@ using WebApiSample.Infra;
 
 namespace WebApiSample.Domain
 {
-    public class Person
+    public class Contact
     {
         #region Attributes
-        public int PersonId { get; set; }
+        public int User_Id { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
@@ -26,9 +26,9 @@ namespace WebApiSample.Domain
 
         #region Get All
 
-        public List<Person> GetAll()
+        public List<Contact> GetAll()
         {
-            List<Person> listPerson = new List<Person>();
+            List<Contact> listContact = new List<Contact>();
 
             try
             {
@@ -37,27 +37,27 @@ namespace WebApiSample.Domain
                 {
                     Connection = SQLConnection.connection,
                     CommandType = CommandType.Text,
-                    CommandText = $"SELECT * FROM Person"
+                    CommandText = $"SELECT * FROM Contact"
                 };
-                command.Parameters.AddWithValue("@PersonId", PersonId);
+                command.Parameters.AddWithValue("@User_Id", User_Id);
 
                 SqlDataReader dataReader = command.ExecuteReader();
 
                 while (dataReader.Read())
                 {
-                    Person person = new Person();
-                    person.PersonId = Int32.Parse(dataReader["PersonId"].ToString());
-                    person.Name = dataReader["Name"].ToString();
-                    person.Phone = dataReader["Phone"].ToString();
-                    person.Email = dataReader["Email"].ToString();
-                    person.BornDate = dataReader["BornDate"].ToString();
-                    person.Gender = dataReader["Gender"].ToString();
-                    listPerson.Add(person);
+                    Contact contact = new Contact();
+                    contact.User_Id = Int32.Parse(dataReader["User_Id"].ToString());
+                    contact.Name = dataReader["Name"].ToString();
+                    contact.Phone = dataReader["Phone"].ToString();
+                    contact.Email = dataReader["Email"].ToString();
+                    contact.BornDate = dataReader["BornDate"].ToString();
+                    contact.Gender = dataReader["Gender"].ToString();
+                    listContact.Add(contact);
                 }
 
                 dataReader.Close();
 
-                return listPerson;
+                return listContact;
 
             }
             catch (Exception)
@@ -83,15 +83,15 @@ namespace WebApiSample.Domain
                 {
                     Connection = SQLConnection.connection,
                     CommandType = CommandType.Text,
-                    CommandText = $"SELECT * FROM Person WHERE PersonId = '{PersonId}'"
+                    CommandText = $"SELECT * FROM Contact WHERE User_Id = '{User_Id}'"
                 };
-                command.Parameters.AddWithValue("@PersonId", PersonId);
+                command.Parameters.AddWithValue("@User_Id", User_Id);
 
                 SqlDataReader dataReader = command.ExecuteReader();
 
                 while (dataReader.Read())
                 {
-                    PersonId = Int32.Parse(dataReader["PersonId"].ToString());
+                    User_Id = Int32.Parse(dataReader["User_Id"].ToString());
                     Name = dataReader["Name"].ToString();
                     Phone = dataReader["Phone"].ToString();
                     Email = dataReader["Email"].ToString();
@@ -130,7 +130,7 @@ namespace WebApiSample.Domain
                     Connection = SQLConnection.connection,
                     CommandType = CommandType.Text,
                     CommandText =
-                    $"INSERT INTO Person (Name, Phone, Email, BornDate, Gender) " +
+                    $"INSERT INTO Contact (Name, Phone, Email, BornDate, Gender) " +
                     $"VALUES ('{Name}', '{Phone}','{Email}', '{BornDate}', '{Gender}')"
                 };
 
@@ -162,12 +162,12 @@ namespace WebApiSample.Domain
                 {
                     Connection = SQLConnection.connection,
                     CommandType = CommandType.Text,
-                    CommandText = $"UPDATE Person SET Name = '{Name}', Phone = '{Phone}'," +
+                    CommandText = $"UPDATE Contact SET Name = '{Name}', Phone = '{Phone}'," +
                     $"Email = '{Email}', BornDate = '{BornDate}', Gender = '{Gender}'" +
-                    $"WHERE PersonId = '{PersonId}'"
+                    $"WHERE User_Id = '{User_Id}'"
                 };
 
-                command.Parameters.AddWithValue("@PersonId", PersonId);
+                command.Parameters.AddWithValue("@User_Id", User_Id);
 
                 int qtd = command.ExecuteNonQuery();
 
@@ -197,7 +197,7 @@ namespace WebApiSample.Domain
                 {
                     Connection = SQLConnection.connection,
                     CommandType = CommandType.Text,
-                    CommandText = $"DELETE FROM Person WHERE PersonId = '{PersonId}'"
+                    CommandText = $"DELETE FROM Contact WHERE User_Id = '{User_Id}'"
                 };
 
                 int qtd = command.ExecuteNonQuery();
